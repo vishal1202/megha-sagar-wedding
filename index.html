@@ -276,7 +276,7 @@
         h("div", { className: "lines" }, ev.rows.map(function (r) { return h("div", { key: r[0] }, h("span", null, r[0]), h("span", null, r[1])); })),
         h("div", { className: "actions" },
           h("button", { type: "button", id: "copy-ev", className: "btn ghost", onClick: function () { copyText(ev.copy, setNote, "Details copied."); } }, "Copy details"),
-          i === 1 ? h("a", { className: "btn", id: "map", href: "https://www.google.com/maps/search/?api=1&query=Royal+Garden+Warap", target: "_blank", rel: "noopener" }, "Open in Maps") : null),
+          i === 1 ? h("a", { className: "btn", id: "map", href: "https://www.google.com/maps/search/?api=1&query=Royal+Garden&query_place_id=ChIJE6LOMuOT5zsRj0W0TVXCYCc", target: "_blank", rel: "noopener" }, "Open in Maps") : null),
         h("p", { className: "note", role: "status" }, note)));
   }
 
